@@ -11,6 +11,8 @@ PEAS can be run without installation from the parent `peas` directory (containin
 
 `python3 -m peas [options] <server>`
 
+<img width="751" alt="peas" src="https://github.com/user-attachments/assets/63312719-d832-45e3-9c35-e2af4e7d903f" />
+
 
 ## Example usage
 ### Check server
