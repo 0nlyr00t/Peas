@@ -2,3 +2,4 @@ requests
 twisted
 lxml
 zope.interface
+pyOpenSSL
