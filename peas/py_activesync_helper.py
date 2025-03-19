@@ -60,7 +60,15 @@ def as_request(as_conn, cmd, wapxml_req):
     #print("\r\n%s Request:") % cmd
     #print(wapxml_req)
     res = as_conn.post(cmd, parser.encode(wapxml_req))
-    wapxml_res = parser.decode(res)
+    print(f"[DEBUG] Raw Response (WBXML Expected): {res}")
+    import xml.etree.ElementTree as ET
+    try:
+        print(f"[DEBUG] Raw Server Response: '{res}'")
+        root = ET.fromstring(res)
+        print(f"[DEBUG] Parsed XML Response: {ET.tostring(root, encoding='utf-8').decode()}")
+    except ET.ParseError:
+        print("[ERROR] Server returned non-XML response!")
+        raise
     #print("\r\n%s Response:") % cmd
     #print(wapxml_res)
     return wapxml_res
