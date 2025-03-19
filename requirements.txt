@@ -3,3 +3,4 @@ twisted
 lxml
 zope.interface
 pyOpenSSL
+service_identity
