@@ -2,7 +2,7 @@
 Original PEAS (https://github.com/WithSecureLabs/peas) is a Python 2 library and command line application for running commands on an ActiveSync server e.g. Microsoft Exchange. It is based on [research](https://labs.mwrinfosecurity.com/blog/accessing-internal-fileshares-through-exchange-activesync) into Exchange ActiveSync protocol by Adam Rutherford and David Chismon of MWR.
 
 ## Optional installation
-`python setup.py install`
+`python3 setup.py install`
 
 # PEAS application
 PEAS can be run without installation from the parent `peas` directory (containing this readme). PEAS can also be run with the command `peas` after installation.
