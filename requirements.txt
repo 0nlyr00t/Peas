@@ -1,0 +1,8 @@
+requests
+twisted
+lxml
+zope.interface
+pprint
+sqlite3
+email
+tkinter
